@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://bu43xrsgbitt5"]
+
+[ext_resource type="Script" uid="uid://b6da2acsck1io" path="res://main.gd" id="1_ybq6y"]
+[ext_resource type="Texture2D" uid="uid://cckn6kdb6lk7a" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/sky.Cd26rYaA.png" id="2_11ixh"]
+[ext_resource type="Texture2D" uid="uid://xdap3h2loy2x" path="res://grass.png" id="3_w078t"]
+[ext_resource type="FontFile" uid="uid://c57oe0cxie43b" path="res://taiyaki.CytOCdWv.woff2" id="5_fd6ls"]
+[ext_resource type="Script" uid="uid://bva8abvkpnvdc" path="res://player.gd" id="6_boi4p"]
+[ext_resource type="Texture2D" uid="uid://orrjhdwgntk0" path="res://cat.png" id="7_rqpmi"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lquwl"]
+radius = 36.0
+height = 92.0
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ybq6y")
+
+[node name="Sky" type="Sprite2D" parent="."]
+position = Vector2(551, 308)
+texture = ExtResource("2_11ixh")
+
+[node name="Grass" type="Sprite2D" parent="."]
+position = Vector2(566, 553)
+scale = Vector2(3, 3)
+texture = ExtResource("3_w078t")
+
+[node name="Score" type="Label" parent="."]
+offset_left = 982.0
+offset_top = 21.0
+offset_right = 1114.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.48235294)
+theme_override_fonts/font = ExtResource("5_fd6ls")
+theme_override_font_sizes/font_size = 40
+text = "Score: 0"
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(565, 496)
+script = ExtResource("6_boi4p")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("7_rqpmi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(-1, 12)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_lquwl")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
