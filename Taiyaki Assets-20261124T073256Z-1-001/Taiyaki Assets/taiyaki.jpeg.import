@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://u6ol28tbctuq"
-path="res://.godot/imported/grass.Cl3zEclX.png-e8cfd0ef8bf9ddd08122dde7907c6b98.ctex"
+uid="uid://36dsafobrbuy"
+path="res://.godot/imported/taiyaki.jpeg-5f2c45321e9492df74cddcfac532f59d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://grass.Cl3zEclX.png"
-dest_files=["res://.godot/imported/grass.Cl3zEclX.png-e8cfd0ef8bf9ddd08122dde7907c6b98.ctex"]
+source_file="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/taiyaki.jpeg"
+dest_files=["res://.godot/imported/taiyaki.jpeg-5f2c45321e9492df74cddcfac532f59d.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dtrlg1kgxjjch"
-path="res://.godot/imported/taiyaki-outline.BWmhx9uS.woff2-81cb66f82893c1b07cda73c0c189ca18.fontdata"
+path="res://.godot/imported/taiyaki-outline.BWmhx9uS.woff2-cbd1b85616a527a0f1ecac0941f220ed.fontdata"
 
 [deps]
 
-source_file="res://taiyaki-outline.BWmhx9uS.woff2"
-dest_files=["res://.godot/imported/taiyaki-outline.BWmhx9uS.woff2-81cb66f82893c1b07cda73c0c189ca18.fontdata"]
+source_file="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/taiyaki-outline.BWmhx9uS.woff2"
+dest_files=["res://.godot/imported/taiyaki-outline.BWmhx9uS.woff2-cbd1b85616a527a0f1ecac0941f220ed.fontdata"]
 
 [params]
 

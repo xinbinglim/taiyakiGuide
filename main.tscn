@@ -3,11 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://cckn6kdb6lk7a" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/sky.Cd26rYaA.png" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://b6da2acsck1io" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="Script" uid="uid://bva8abvkpnvdc" path="res://player.gd" id="3_1bvp3"]
-[ext_resource type="Texture2D" uid="uid://xdap3h2loy2x" path="res://grass.png" id="3_lquwl"]
-[ext_resource type="Texture2D" uid="uid://orrjhdwgntk0" path="res://cat.png" id="5_7mycd"]
-[ext_resource type="Texture2D" uid="uid://b8qjhsshv2xvn" path="res://sign.png" id="6_272bh"]
-[ext_resource type="FontFile" uid="uid://c57oe0cxie43b" path="res://taiyaki.CytOCdWv.woff2" id="7_5vw27"]
-[ext_resource type="Texture2D" uid="uid://bhbhj42yrqx0s" path="res://logo.B-5x3nD4.png" id="8_5vw27"]
+[ext_resource type="Texture2D" uid="uid://xdap3h2loy2x" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/grass.png" id="3_lquwl"]
+[ext_resource type="Texture2D" uid="uid://orrjhdwgntk0" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/cat.png" id="5_7mycd"]
+[ext_resource type="Texture2D" uid="uid://b8qjhsshv2xvn" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/sign.png" id="6_272bh"]
+[ext_resource type="FontFile" uid="uid://c57oe0cxie43b" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/taiyaki.CytOCdWv.woff2" id="7_5vw27"]
+[ext_resource type="Texture2D" uid="uid://bhbhj42yrqx0s" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/logo.B-5x3nD4.png" id="8_5vw27"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lquwl"]
 radius = 49.00003
@@ -68,7 +68,7 @@ shape = SubResource("CapsuleShape2D_lquwl")
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="TaiyakiLogo" type="Sprite2D" parent="."]
 modulate = Color(18.892157, 18.892157, 18.892157, 1)
 position = Vector2(1049, 582)
 scale = Vector2(0.15, 0.15)

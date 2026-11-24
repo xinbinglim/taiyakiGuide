@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://c57oe0cxie43b"
-path="res://.godot/imported/taiyaki.CytOCdWv.woff2-228d8677827846b9f7c4a826cf21305e.fontdata"
+path="res://.godot/imported/taiyaki.CytOCdWv.woff2-c5a3b2534b703c05231660aafc2c5f58.fontdata"
 
 [deps]
 
-source_file="res://taiyaki.CytOCdWv.woff2"
-dest_files=["res://.godot/imported/taiyaki.CytOCdWv.woff2-228d8677827846b9f7c4a826cf21305e.fontdata"]
+source_file="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/taiyaki.CytOCdWv.woff2"
+dest_files=["res://.godot/imported/taiyaki.CytOCdWv.woff2-c5a3b2534b703c05231660aafc2c5f58.fontdata"]
 
 [params]
 

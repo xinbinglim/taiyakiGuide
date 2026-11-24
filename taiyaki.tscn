@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cwel6hp8qgf1e"]
 
-[ext_resource type="Texture2D" uid="uid://cfiekxu8op1m4" path="res://taiyaki.png" id="1_6txxi"]
+[ext_resource type="Texture2D" uid="uid://cfiekxu8op1m4" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/taiyaki.png" id="1_6txxi"]
 [ext_resource type="Script" uid="uid://bdtgd8ded8jsn" path="res://taiyaki.gd" id="1_tj7v3"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tj7v3"]

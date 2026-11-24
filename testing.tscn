@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://b6da2acsck1io" path="res://main.gd" id="1_ybq6y"]
 [ext_resource type="Texture2D" uid="uid://cckn6kdb6lk7a" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/sky.Cd26rYaA.png" id="2_11ixh"]
-[ext_resource type="Texture2D" uid="uid://xdap3h2loy2x" path="res://grass.png" id="3_w078t"]
-[ext_resource type="FontFile" uid="uid://c57oe0cxie43b" path="res://taiyaki.CytOCdWv.woff2" id="5_fd6ls"]
+[ext_resource type="Texture2D" uid="uid://xdap3h2loy2x" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/grass.png" id="3_w078t"]
+[ext_resource type="FontFile" uid="uid://c57oe0cxie43b" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/taiyaki.CytOCdWv.woff2" id="5_fd6ls"]
 [ext_resource type="Script" uid="uid://bva8abvkpnvdc" path="res://player.gd" id="6_boi4p"]
-[ext_resource type="Texture2D" uid="uid://orrjhdwgntk0" path="res://cat.png" id="7_rqpmi"]
+[ext_resource type="Texture2D" uid="uid://orrjhdwgntk0" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/cat.png" id="7_rqpmi"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lquwl"]
 radius = 36.0
