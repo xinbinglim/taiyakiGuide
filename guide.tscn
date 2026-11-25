@@ -1,0 +1,77 @@
+[gd_scene load_steps=10 format=3 uid="uid://d4hhlgw678hg3"]
+
+[ext_resource type="Texture2D" uid="uid://cckn6kdb6lk7a" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/sky.Cd26rYaA.png" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://b6da2acsck1io" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://bva8abvkpnvdc" path="res://player.gd" id="3_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://xdap3h2loy2x" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/grass.png" id="3_lquwl"]
+[ext_resource type="Texture2D" uid="uid://orrjhdwgntk0" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/cat.png" id="5_7mycd"]
+[ext_resource type="Texture2D" uid="uid://b8qjhsshv2xvn" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/sign.png" id="6_272bh"]
+[ext_resource type="FontFile" uid="uid://c57oe0cxie43b" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/taiyaki.CytOCdWv.woff2" id="7_5vw27"]
+[ext_resource type="Texture2D" uid="uid://bhbhj42yrqx0s" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/logo.B-5x3nD4.png" id="8_5vw27"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lquwl"]
+radius = 49.00003
+height = 102.0
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_h2yge")
+
+[node name="Sky" type="Sprite2D" parent="."]
+position = Vector2(551, 308)
+texture = ExtResource("1_0xm2m")
+
+[node name="Grass" type="Sprite2D" parent="."]
+position = Vector2(566, 553)
+scale = Vector2(3, 3)
+texture = ExtResource("3_lquwl")
+
+[node name="Scoreboard" type="Sprite2D" parent="."]
+position = Vector2(973, 117.00001)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6_272bh")
+
+[node name="Score" type="Label" parent="."]
+offset_left = 845.0
+offset_top = 103.0
+offset_right = 951.0
+offset_bottom = 155.0
+theme_override_colors/font_color = Color(0.80784315, 0.6, 0.34117648, 1)
+theme_override_fonts/font = ExtResource("7_5vw27")
+theme_override_font_sizes/font_size = 32
+text = "Score: 0"
+
+[node name="Title" type="Label" parent="."]
+offset_left = 835.0
+offset_top = 60.0
+offset_right = 1019.0
+offset_bottom = 127.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.34117648, 0.34117648, 0.34117648, 0.30980393)
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("7_5vw27")
+theme_override_font_sizes/font_size = 32
+text = "Catch Taiyaki"
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(565, 496)
+script = ExtResource("3_1bvp3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("5_7mycd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(-1, 1)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_lquwl")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="TaiyakiLogo" type="Sprite2D" parent="."]
+modulate = Color(18.892157, 18.892157, 18.892157, 1)
+position = Vector2(1049, 582)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("8_5vw27")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
