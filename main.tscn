@@ -7,8 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://orrjhdwgntk0" path="res://Taiyaki Assets-20261124T073256Z-1-001/Taiyaki Assets/cat.png" id="7_rqpmi"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lquwl"]
-radius = 90.00003
-height = 180.00006
+radius = 102.85718
+height = 236.0
 
 [node name="Node" type="Node"]
 script = ExtResource("1_ybq6y")
@@ -33,7 +33,7 @@ scale = Vector2(1.2, 1.2)
 texture = ExtResource("7_rqpmi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2(-1, 12)
+position = Vector2(-4.2856965, 7.142866)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_lquwl")
 
